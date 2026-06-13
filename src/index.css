@@ -25,6 +25,20 @@
   pointer-events: none;
 }
 
+/* Hide native iOS/mobile video play overlay (shows when autoplay is blocked) */
+@media (max-width: 768px) {
+  video::-webkit-media-controls-start-playback-button {
+    display: none !important;
+    -webkit-appearance: none;
+  }
+  video::-webkit-media-controls-panel {
+    display: none !important;
+  }
+  video::-webkit-media-controls {
+    display: none !important;
+  }
+}
+
 /* Custom scrollbars for liquid glass panels */
 ::-webkit-scrollbar {
   width: 5px;

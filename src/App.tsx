@@ -62,6 +62,14 @@ export default function App() {
           console.log("Autoplay was prevented by browser security. Ready for manual play input:", err);
           // Auto-fallback: start with visible canvas to prevent empty layouts
           video.style.opacity = '1';
+
+          // On mobile, autoplay is sometimes blocked until first user interaction
+          const handleFirstTouch = () => {
+            video.play()
+              .then(() => fadeTo(1, 500))
+              .catch(() => {});
+          };
+          document.addEventListener('touchstart', handleFirstTouch, { once: true });
         });
     }
 

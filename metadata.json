@@ -1,0 +1,6 @@
+{
+  "name": "Eduardo Bonto Portfolio",
+  "description": "A dark cinematic portfolio for Eduardo Bonto, featuring looping background videos, interactive liquid glass UI components, and rich skill showcase.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

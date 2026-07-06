@@ -6,7 +6,7 @@ export const BIO = {
   email: "eduardobonto@gmail.com",
   location: "Manila, Philippines",
   tagline: "Over 14 years of engineering scalable web applications, REST APIs, and database engines for enterprise sectors.",
-  about: "Senior Full Stack Developer with 14+ years of experience designing, developing, and supporting enterprise web applications, REST APIs, and SQL-based systems for banking, retail, and business operations. Experienced in ASP.NET Core, C#, SQL Server, Oracle, AWS, Azure, and modern frontend frameworks. Proven ability to lead junior developers, coordinate directly with stakeholders, and deliver scalable production systems used by enterprise clients nationwide.",
+  about: "Senior Full Stack Developer with 14+ years of experience designing, developing, and supporting enterprise web applications, REST APIs, and SQL-based systems for banking, retail, and business operations. Experienced in ASP.NET Core, C#, SQL Server, Oracle, AWS, Azure, iOS, and modern frontend frameworks. Proven ability to lead junior developers, coordinate directly with stakeholders, and deliver scalable production systems used by enterprise clients nationwide.",
 };
 
 export const PROJECTS: Project[] = [
@@ -51,14 +51,15 @@ Whether you're budgeting for rent, tuition, loans, or family expenses, Kinsenas 
     ]
   },
   {
-    id: "ecommerce",
-    title: "Enterprise E-Commerce Engine",
-    description: "Shopee/Lazada style high-concurrency digital store solutions featuring live product catalogs, lightning-fast inventory synchronization, secure cart states, and resilient payment gateway integrations.",
-    tags: ["Vite", "React", "TypeScript", "Supabase"],
+    id: "cupstation",
+    title: "Coffee Shop 3D Interactive Website",
+    description: "An immersive 3D interactive coffee shop showcase featuring real-time WebGL product visualization, smooth scroll-driven animations, and an engaging brand storytelling experience.",
+    tags: ["Vite", "React", "TypeScript", "Three.js"],
+    liveUrl: "https://cupstation.vercel.app/",
     category: "Web Architecture",
     stats: [
-      { label: "Concurrent Handlers", value: "10k+ / sec" },
-      { label: "Database Speed", value: "Sub-5ms" }
+      { label: "Rendering", value: "Realtime 3D / WebGL" },
+      { label: "Frame Rate", value: "60fps" }
     ]
   },
   {
@@ -70,6 +71,18 @@ Whether you're budgeting for rent, tuition, loans, or family expenses, Kinsenas 
     stats: [
       { label: "Tabulation Latency", value: "0ms delay" },
       { label: "Failover Reserves", value: "Dual Mirroring" }
+    ]
+  },
+  {
+    id: "pinkworks",
+    title: "PinkWorks",
+    description: "Premium aesthetics treatments — Pico Laser, Glutathione, Diamond Peel, Diode Hair Removal, Pink Slim and more. Walk-in & by appointment.",
+    tags: ["Vite", "React", "TypeScript", "Supabase"],
+    liveUrl: "https://pinkworks.vercel.app/",
+    category: "Fullstack Booking",
+    stats: [
+      { label: "Services", value: "Aesthetics & Wellness" },
+      { label: "Booking", value: "Walk-in & Appointment" }
     ]
   }
 ];

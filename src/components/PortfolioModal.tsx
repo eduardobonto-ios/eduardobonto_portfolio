@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { X, ExternalLink, Github, Mail, MapPin, Code, Briefcase, Award, Send, CheckCircle2 } from 'lucide-react';
+import { X, ExternalLink, Github, Mail, MapPin, Code, Briefcase, Award, Send, CheckCircle2, Building2 } from 'lucide-react';
 import { BIO, PROJECTS, SKILL_GROUPS, EXPERIENCE_HISTORY } from '../data';
 
 interface PortfolioModalProps {
@@ -9,7 +9,7 @@ interface PortfolioModalProps {
 }
 
 export default function PortfolioModal({ isOpen, onClose }: PortfolioModalProps) {
-  const [activeTab, setActiveTab] = useState<'about' | 'projects' | 'skills' | 'contact'>('about');
+  const [activeTab, setActiveTab] = useState<'about' | 'projects' | 'skills' | 'work' | 'contact'>('about');
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
@@ -33,7 +33,8 @@ export default function PortfolioModal({ isOpen, onClose }: PortfolioModalProps)
   const menuItems = [
     { id: 'about', label: 'About', icon: Award },
     { id: 'projects', label: 'Projects', icon: Code },
-    { id: 'skills', label: 'Skills & History', icon: Briefcase },
+    { id: 'skills', label: 'Skills', icon: Briefcase },
+    { id: 'work', label: 'Work Experience', icon: Building2 },
     { id: 'contact', label: 'Contact', icon: Mail },
   ] as const;
 
@@ -265,7 +266,7 @@ export default function PortfolioModal({ isOpen, onClose }: PortfolioModalProps)
                       </div>
                     )}
 
-                    {/* SKILLS & TIMELINE TAB */}
+                    {/* SKILLS TAB */}
                     {activeTab === 'skills' && (
                       <div className="space-y-8" id="skills-tab-content">
                         {/* Skills Bars */}
@@ -301,9 +302,13 @@ export default function PortfolioModal({ isOpen, onClose }: PortfolioModalProps)
                             ))}
                           </div>
                         </div>
+                      </div>
+                    )}
 
-                        {/* Experience History */}
-                        <div className="space-y-4 pt-2">
+                    {/* WORK EXPERIENCE TAB */}
+                    {activeTab === 'work' && (
+                      <div className="space-y-8" id="work-tab-content">
+                        <div className="space-y-4">
                           <h3 className="text-xs font-mono text-white/40 uppercase tracking-widest">
                             Employment Chronology
                           </h3>
@@ -312,7 +317,7 @@ export default function PortfolioModal({ isOpen, onClose }: PortfolioModalProps)
                               <div key={exp.id} className="relative space-y-2">
                                 {/* Dot */}
                                 <div className="absolute -left-[21px] top-1.5 w-2.5 h-2.5 rounded-full bg-white/30 border border-black" />
-                                
+
                                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
                                   <h4 className="text-sm font-semibold text-white/95 leading-snug">
                                     {exp.role}

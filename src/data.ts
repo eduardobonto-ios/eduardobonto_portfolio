@@ -7,6 +7,8 @@ export const BIO = {
   location: "Manila, Philippines",
   tagline: "Over 14 years of engineering scalable web applications, REST APIs, and database engines for enterprise sectors.",
   about: "Senior Full Stack Developer with 14+ years of experience designing, developing, and supporting enterprise web applications, REST APIs, and SQL-based systems for banking, retail, and business operations. Experienced in ASP.NET Core, C#, SQL Server, Oracle, AWS, Azure, iOS, and modern frontend frameworks. Proven ability to lead junior developers, coordinate directly with stakeholders, and deliver scalable production systems used by enterprise clients nationwide.",
+  entrepreneurshipTitle: "Founder & Lead Software Engineer at Easymple",
+  entrepreneurship: "Building scalable SaaS products, AI-powered solutions, enterprise ERP systems, and mobile applications for businesses and startups.",
 };
 
 export const PROJECTS: Project[] = [
@@ -39,6 +41,18 @@ Whether you're budgeting for rent, tuition, loans, or family expenses, Kinsenas 
     ]
   },
   {
+    id: "sttheresa",
+    title: "St. Theresa School ERP System",
+    description: "A comprehensive Enterprise Resource Planning system built for St. Theresa, covering Basic Education and College departments — streamlining enrollment, academic records, and administrative operations.",
+    tags: ["Vite", "React", "TypeScript", "Supabase"],
+    liveUrl: "https://www.facebook.com/reel/2147044502511110",
+    category: "Enterprise ERP",
+    stats: [
+      { label: "Scope", value: "Basic Ed & College" },
+      { label: "System Type", value: "Enterprise ERP" }
+    ]
+  },
+  {
     id: "traveltour",
     title: "JCalbert Travel & Tours Services",
     description: "An elegant, interactive travel and tour booking engine featuring dynamic customer reservation pipelines, automated scheduling, secure checkouts, and custom travel itinerary generation structures.",
@@ -67,6 +81,7 @@ Whether you're budgeting for rent, tuition, loans, or family expenses, Kinsenas 
     title: "Mutya ng Pilipinas Tabulation Core",
     description: "A highly resilient, real-time pageant scoring and adjudication system built for Mutya ng Pilipinas. Engineered with low-latency client state synchronization and responsive dashboard projections.",
     tags: ["Vite", "React", "TypeScript", "Supabase"],
+    liveUrl: "https://www.facebook.com/reel/927282166954237",
     category: "Live Event Tech",
     stats: [
       { label: "Tabulation Latency", value: "0ms delay" },
@@ -83,6 +98,18 @@ Whether you're budgeting for rent, tuition, loans, or family expenses, Kinsenas 
     stats: [
       { label: "Services", value: "Aesthetics & Wellness" },
       { label: "Booking", value: "Walk-in & Appointment" }
+    ]
+  },
+  {
+    id: "palawanecommerce",
+    title: "Palawan E-Commerce Marketplace",
+    description: "A full-featured e-commerce marketplace platform for Palawan, built in the mold of Shopee and Lazada — featuring product catalogs, shopping cart and checkout flows, seller storefronts, and order management.",
+    tags: ["Vite", "React", "TypeScript", "Supabase"],
+    liveUrl: "https://www.facebook.com/reel/2531995353908372",
+    category: "Fullstack E-Commerce",
+    stats: [
+      { label: "Platform Type", value: "Marketplace" },
+      { label: "Inspired By", value: "Shopee / Lazada" }
     ]
   }
 ];

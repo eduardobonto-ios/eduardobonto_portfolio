@@ -150,6 +150,20 @@ export default function PortfolioModal({ isOpen, onClose }: PortfolioModalProps)
                           </p>
                         </div>
 
+                        <div className="space-y-3">
+                          <h4 className="text-xs font-mono text-white/40 uppercase tracking-wider">
+                            Entrepreneurship
+                          </h4>
+                          <div className="p-4 rounded-2xl bg-white/[0.02] border border-white/5 space-y-1.5">
+                            <p className="text-white/90 text-sm font-medium leading-snug">
+                              {BIO.entrepreneurshipTitle}
+                            </p>
+                            <p className="text-white/65 text-xs leading-relaxed font-sans">
+                              {BIO.entrepreneurship}
+                            </p>
+                          </div>
+                        </div>
+
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
                           <div className="p-4 rounded-2xl bg-white/[0.02] border border-white/5 space-y-1">
                             <span className="text-[10px] font-mono text-white/40 uppercase tracking-wider block">
